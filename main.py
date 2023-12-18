@@ -9,26 +9,26 @@
 
 # Commented out IPython magic to ensure Python compatibility.
 # #%%writefile app.py
- import numpy as np
- import pandas as pd
- import streamlit as st
+import numpy as np
+import pandas as pd
+import streamlit as st
  
- st.header(":black[RoyalSystem Calculation Tool]",divider="red")
+st.header(":black[RoyalSystem Calculation Tool]",divider="red")
  
- #Scheme selection:Calculations are being made according to this statement, every calculation can change accordingly
- selected_scheme = st.selectbox(
-     "Which scheme are you calculating?",
-     ("ISO 9001",
-      "ISO 14001",
-      "ISO 45001",
-      )
- )
+#Scheme selection:Calculations are being made according to this statement, every calculation can change accordingly
+selected_scheme = st.selectbox(
+    "Which scheme are you calculating?",
+    ("ISO 9001",
+     "ISO 14001",
+     "ISO 45001",
+     )
+)
  
- #Employee number selection:Calculations are being made according to this statement.
- employee_number =st.number_input('What is the number of employees?')
+#Employee number selection:Calculations are being made according to this statement.
+employee_number =st.number_input('What is the number of employees?')
  
- #According to the type there can be increase or decrease on numbers
- increase_or_decrease = st.selectbox(
+#According to the type there can be increase or decrease on numbers
+increase_or_decrease = st.selectbox(
      "Would you like to apply increase or decrease?",
      ("No",
       "Increase",
